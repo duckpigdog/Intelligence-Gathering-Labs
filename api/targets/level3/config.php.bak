@@ -1,7 +1,0 @@
-<?php
-// Database Configuration
-$db_host = 'localhost';
-$db_user = 'admin';
-$db_pass = 'IG_LABS{backup_files_are_dangerous}'; // FLAG
-$db_name = 'production_db';
-?>
