@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息收集靶场</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="container">
+        <header>
+            <h1>IG-LABS</h1>
+            <p class="subtitle">红队打点、蓝队溯源专用信息收集靶场</p>
+        </header>
+
+        <div class="grid">
+            <!-- Level 1 -->
+            <div class="card" onclick="window.open('challenges/01_whois/index.php', '_blank')">
+                <div class="status basic">Basic</div>
+                <h3>Level 01</h3>
+                <p>Whois 查询</p>
+                <div style="font-size: 0.8rem; color: #64748b;">Whois 查询是用于查询域名注册信息、IP 地址归属以及网站所有者等公开信息的网络工具</div>
+            </div>
+
+            <!-- Level 2 -->
+            <div class="card" onclick="window.open('challenges/02_robots/index.php', '_blank')">
+                <div class="status basic">Basic</div>
+                <h3>Level 02</h3>
+                <p>Google Hack</p>
+                <div style="font-size: 0.8rem; color: #64748b;">Google Hack 是一种利用 Google 等搜索引擎的高级搜索语法和特性，来发现网络上未被公开或意外暴露的敏感信息、文件或系统漏洞的技术</div>
+            </div>
+
+            <!-- Level 3 -->
+            <div class="card" onclick="window.open('challenges/03_headers/index.php', '_blank')">
+                <div class="status medium">Medium</div>
+                <h3>Level 03</h3>
+                <p>HTTP Headers</p>
+                <div style="font-size: 0.8rem; color: #64748b;">Analyze server responses for sensitive information.</div>
+            </div>
+
+            <!-- Level 4 -->
+            <div class="card" onclick="window.open('challenges/04_git/index.php', '_blank')">
+                <div class="status medium">Medium</div>
+                <h3>Level 04</h3>
+                <p>Git Leakage</p>
+                <div style="font-size: 0.8rem; color: #64748b;">Recover the configuration from the exposed .git folder.</div>
+            </div>
+
+             <!-- Level 5 -->
+             <div class="card" onclick="window.open('challenges/05_backup/index.php', '_blank')">
+                <div class="status medium">Medium</div>
+                <h3>Level 05</h3>
+                <p>Backup Files</p>
+                <div style="font-size: 0.8rem; color: #64748b;">Find the administrator's forgotten backup file.</div>
+            </div>
+
+             <!-- Level 6 -->
+             <div class="card" onclick="window.open('challenges/06_cookie/index.php', '_blank')">
+                <div class="status medium">Medium</div>
+                <h3>Level 06</h3>
+                <p>Cookie Inspection</p>
+                <div style="font-size: 0.8rem; color: #64748b;">Analyze browser cookies for hidden data.</div>
+            </div>
+
+             <!-- Level 7 -->
+             <div class="card" onclick="window.open('challenges/07_dns/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 07</h3>
+                <p>DNS Zone Transfer</p>
+                <div style="font-size: 0.8rem; color: #64748b;">Simulate a DNS AXFR attack to reveal hidden subdomains.</div>
+            </div>
+
+             <!-- Level 8 -->
+             <div class="card" onclick="window.open('challenges/08_security/index.html', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 08</h3>
+                <p>Security.txt</p>
+                <div style="font-size: 0.8rem; color: #64748b;">Find the standard security reporting file.</div>
+            </div>
+        </div>
+
+        <footer>
+            <p>OPEN SOURCE INTELLIGENCE GATHERING LABS v2.0</p>
+            <p>DESIGNED FOR EDUCATIONAL PURPOSES ONLY</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
