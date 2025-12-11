@@ -2,7 +2,7 @@
 $message = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $flag = $_POST['flag'] ?? '';
-    if ($flag === 'flag{MarkMonitor Inc.-12086851750-abusecomplaints@markmonitor.com-2028年09月14日}') {
+    if ($flag === 'flag{Report-PHP_Code_Sec-burp_labs}') {
         $message = '<span style="color:#4ade80">ACCESS GRANTED!</span> <br> <a href="../../index.html">Return to Dashboard</a>';
     } else {
         $message = '<span style="color:#f87171">ACCESS DENIED</span>';
@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Level 01 - Whois 查询</title>
+    <title>Level 19 - GitHub 邮箱关联资产收集</title>
     <link rel="stylesheet" href="../../css/challenge.css">
     <style>
         body { font-size: 18px; }
@@ -26,9 +26,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <div class="container">
-        <h1>LEVEL 01: WHOIS 查询</h1>
-        <p>目标：收集域名 google.com 的 Whois 信息</p>
-        <p>flag{注册商-注册商电话-注册商邮箱-过期时间}</p>
+        <h1>LEVEL 19: GitHub 邮箱关联资产收集</h1>
+        <p>目标：根据邮箱 1476698683@qq.com 找出其关联的 GitHub 仓库（严格区别大小写）</p>
+        <p>注意事项：如果仓库名有 - ，请用下划线 _ 替换</p>
+        <p>flag{仓库名-仓库名-……}</p>
 
         <form method="POST">
             <input type="text" name="flag" placeholder="Enter Flag Here">

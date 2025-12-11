@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /cb2e13cd-7d52-4aa2-9bf6-db31edbbf83e.txt
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+Allow: /
+
+Sitemap: https://www.example.com/sitemap.xml

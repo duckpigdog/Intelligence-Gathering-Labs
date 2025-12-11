@@ -12,7 +12,7 @@
     <div class="container">
         <header>
             <h1>IG-LABS</h1>
-            <p class="subtitle">红队打点、蓝队溯源专用信息收集靶场</p>
+            <p class="subtitle">红蓝队均可使用的信息收集靶场</p>
         </header>
 
         <div class="grid">
@@ -25,7 +25,7 @@
             </div>
 
             <!-- Level 2 -->
-            <div class="card" onclick="window.open('challenges/02_robots/index.php', '_blank')">
+            <div class="card" onclick="window.open('challenges/02_google/index.php', '_blank')">
                 <div class="status basic">Basic</div>
                 <h3>Level 02</h3>
                 <p>Google Hack</p>
@@ -33,57 +33,204 @@
             </div>
 
             <!-- Level 3 -->
-            <div class="card" onclick="window.open('challenges/03_headers/index.php', '_blank')">
-                <div class="status medium">Medium</div>
+            <div class="card" onclick="window.open('challenges/03_reverse_ip/index.php', '_blank')">
+                <div class="status basic">Basic</div>
                 <h3>Level 03</h3>
-                <p>HTTP Headers</p>
-                <div style="font-size: 0.8rem; color: #64748b;">Analyze server responses for sensitive information.</div>
+                <p>域名反查 IP</p>
+                <div style="font-size: 0.8rem; color: #64748b;">通过从全球不同地理位置的网络节点对同一个域名执行 Ping 或路由追踪，分析其返回的 IP 地址是否一致，来判断是否存在 CDN 或负载均衡</div>
             </div>
 
             <!-- Level 4 -->
-            <div class="card" onclick="window.open('challenges/04_git/index.php', '_blank')">
-                <div class="status medium">Medium</div>
+            <div class="card" onclick="window.open('challenges/04_portscan/index.php', '_blank')">
+                <div class="status basic">Basic</div>
                 <h3>Level 04</h3>
-                <p>Git Leakage</p>
-                <div style="font-size: 0.8rem; color: #64748b;">Recover the configuration from the exposed .git folder.</div>
+                <p>端口扫描</p>
+                <div style="font-size: 0.8rem; color: #64748b;">端口扫描是一种向目标主机的网络端口发送探测数据包，以发现其开放端口及所运行服务的安全侦察技术</div>
             </div>
 
              <!-- Level 5 -->
-             <div class="card" onclick="window.open('challenges/05_backup/index.php', '_blank')">
+             <div class="card" onclick="window.open('challenges/05_fingerprint/index.php', '_blank')">
                 <div class="status medium">Medium</div>
                 <h3>Level 05</h3>
-                <p>Backup Files</p>
-                <div style="font-size: 0.8rem; color: #64748b;">Find the administrator's forgotten backup file.</div>
+                <p>指纹收集</p>
+                <div style="font-size: 0.8rem; color: #64748b;">指纹收集是通过分析目标反馈的独特特征信息，来精准识别其类型、版本、配置乃至具体漏洞的侦察技术</div>
             </div>
 
              <!-- Level 6 -->
-             <div class="card" onclick="window.open('challenges/06_cookie/index.php', '_blank')">
+             <div class="card" onclick="window.open('challenges/06_subsidiaries/index.php', '_blank')">
                 <div class="status medium">Medium</div>
                 <h3>Level 06</h3>
-                <p>Cookie Inspection</p>
-                <div style="font-size: 0.8rem; color: #64748b;">Analyze browser cookies for hidden data.</div>
+                <p>子公司收集</p>
+                <div style="font-size: 0.8rem; color: #64748b;">子公司收集是通过商业数据库、公开情报、关联分析等手段，系统性地发现与目标母公司存在控股、投资或关联关系的所有下属公司或实体</div>
             </div>
 
              <!-- Level 7 -->
-             <div class="card" onclick="window.open('challenges/07_dns/index.php', '_blank')">
-                <div class="status high">High</div>
+             <div class="card" onclick="window.open('challenges/07_domain/index.php', '_blank')">
+                <div class="status medium">Medium</div>
                 <h3>Level 07</h3>
-                <p>DNS Zone Transfer</p>
-                <div style="font-size: 0.8rem; color: #64748b;">Simulate a DNS AXFR attack to reveal hidden subdomains.</div>
+                <p>主域名收集</p>
+                <div style="font-size: 0.8rem; color: #64748b;">通过查询目标组织的官方 ICP/公安备案信息，直接、准确地获取其在国内合法运营的所有核心网站域名</div>
             </div>
 
              <!-- Level 8 -->
-             <div class="card" onclick="window.open('challenges/08_security/index.html', '_blank')">
-                <div class="status high">High</div>
+             <div class="card" onclick="window.open('challenges/08_wechat/index.php', '_blank')">
+                <div class="status medium">Medium</div>
                 <h3>Level 08</h3>
-                <p>Security.txt</p>
-                <div style="font-size: 0.8rem; color: #64748b;">Find the standard security reporting file.</div>
+                <p>小程序收集</p>
+                <div style="font-size: 0.8rem; color: #64748b;">小程序收集（专指微信）是通过抓取微信公开搜索，系统发现目标机构开发运营的微信小程序资产</div>
             </div>
-        </div>
+
+            <div class="card" onclick="window.open('challenges/09_wcgzh/index.php', '_blank')">
+                <div class="status medium">Medium</div>
+                <h3>Level 09</h3>
+                <p>公众号收集</p>
+                <div style="font-size: 0.8rem; color: #64748b;">微信公众号收集是通过微信搜索，系统发现并监控目标组织认证或运营的公众号及其关联资产</div>
+            </div>
+
+             <div class="card" onclick="window.open('challenges/10_wcserver/index.php', '_blank')">
+                <div class="status medium">Medium</div>
+                <h3>Level 10</h3>
+                <p>服务号收集</p>
+                <div style="font-size: 0.8rem; color: #64748b;">服务号收集是通过微信搜索，系统发现目标组织认证的微信服务号</div>
+            </div>
+            <div class="card" onclick="window.open('challenges/11_app/index.php', '_blank')">
+                <div class="status medium">Medium</div>
+                <h3>Level 11</h3>
+                <p>APP 收集</p>
+                <div style="font-size: 0.8rem; color: #64748b;">APP 收集是通过官方应用商店、第三方分发平台，系统发现目标组织开发或运营的移动应用程序资产</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/12_email/index.php', '_blank')">
+                <div class="status medium">Medium</div>
+                <h3>Level 12</h3>
+                <p>邮箱收集</p>
+                <div style="font-size: 0.8rem; color: #64748b;">邮箱收集是通过网络爬虫、公开数据泄露库、企业官网抓取、员工社交平台信息聚合等方式，批量获取与目标组织关联的电子邮件地址的侦察技术</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/13_sondomain/index.php', '_blank')">
+                <div class="status medium">Medium</div>
+                <h3>Level 13</h3>
+                <p>子域名收集</p>
+                <div style="font-size: 0.8rem; color: #64748b;">子域名收集是通过 DNS 爆破、证书透明日志、搜索引擎爬取等技术，系统性地发现目标主域名下所有二级、三级等子域名的侦察过程</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/14_dir/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 14</h3>
+                <p>目录爆破</p>
+                <div style="font-size: 0.8rem; color: #64748b;">目录爆破是通过自动化工具，使用预设的字典对目标网站进行大量路径请求，以发现隐藏页面、后台入口、敏感文件或未授权访问接口的侦察技术</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/15_js/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 15</h3>
+                <p>JavaScript 接口泄露</p>
+                <div style="font-size: 0.8rem; color: #64748b;">JS 接口泄露是指 Web 应用前端代码中遗留的 API 密钥、内部接口地址、管理员路径等敏感信息，因未脱敏处理而被攻击者直接获取的常见安全漏洞</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/16_github/admin/login.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 16</h3>
+                <p>GitHub 源码泄露</p>
+                <div style="font-size: 0.8rem; color: #64748b;">GitHub 泄露是指开发者误将密钥、密码等敏感信息上传到公开代码库，导致核心数据暴露的高危漏洞</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/17_github_branch/admin/login.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 17</h3>
+                <p>GitHub 分支泄露</p>
+                <div style="font-size: 0.8rem; color: #64748b;">GitHub 分支泄露是指开发者在未受保护的分支中提交了敏感代码或数据，导致其可通过直接访问分支或历史提交记录被公开获取的安全漏洞</div>
+            </div>
+            <div class="card" onclick="window.open('challenges/18_github_commit/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 18</h3>
+                <p>GitHub 提交泄露</p>
+                <div style="font-size: 0.8rem; color: #64748b;">GitHub 提交泄露是指：代码提交时误将敏感信息（如密码、密钥）一同推送至公开仓库，造成安全隐患</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/19_github_email/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 19</h3>
+                <p>GitHub 邮箱关联资产收集</p>
+                <div style="font-size: 0.8rem; color: #64748b;">通过邮箱在 GitHub 上搜索关联的代码提交、仓库和用户信息，来发现潜在泄露的敏感信息和资产痕迹</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/20_github_api_org/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 20</h3>
+                <p>GitHub API 使用</p>
+                <div style="font-size: 0.8rem; color: #64748b;">通过 GitHub API 列出组织下所有仓库的名称、URL、创建时间、最后更新时间等信息</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/21_github_issues/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 21</h3>
+                <p>GitHub issues 泄露</p>
+                <div style="font-size: 0.8rem; color: #64748b;">GitHub issues 可能包含敏感信息、漏洞细节或内部讨论，若公开或配置不当会导致信息泄露风险</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/22_github_git/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 22</h3>
+                <p>.git 泄露</p>
+                <div style="font-size: 0.8rem; color: #64748b;">.git 目录泄露是指：开发者将 .git 目录（包含版本控制信息、历史提交记录、配置文件等）上传至公开代码仓库，导致敏感信息泄露风险</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/23_su_commit/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 23</h3>
+                <p>commit 提交溯源</p>
+                <div style="font-size: 0.8rem; color: #64748b;">commit 提交溯源可以通过分析提交历史、作者信息、时间戳和代码变更，追踪特定代码的来源、修改者的邮箱</div>
+            </div>
+        
+            <div class="card" onclick="window.open('challenges/24_su_email/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 24</h3>
+                <p>邮箱溯源</p>
+                <div style="font-size: 0.8rem; color: #64748b;">邮箱溯源可以通过关联公开数据、代码提交记录和社交平台信息，追踪特定邮箱背后的用户身份和活动轨迹</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/25_person/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 25</h3>
+                <p>联系方式信息收集</p>
+                <div style="font-size: 0.8rem; color: #64748b;">通过公开渠道（官网、电商、社交媒体等）获取目标机构/产品的联系方式，用于渗透测试、社会工程或客户验证</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/26_icp/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 26</h3>
+                <p>ICP 备案查询</p>
+                <div style="font-size: 0.8rem; color: #64748b;">通过官方或第三方平台查询网站的备案信息，以确认其主办单位、许可证号及真实性，常用于资质核查或资产归属确认</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/27_icon/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 27</h3>
+                <p>网络空间搜索引擎</p>
+                <div style="font-size: 0.8rem; color: #64748b;">通过主动扫描全网设备并索引其服务、端口及指纹信息，实现快速检索特定主机、服务或漏洞的专业搜索引擎</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/28_ssl/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 28</h3>
+                <p>SSL 证书搜集</p>
+                <div style="font-size: 0.8rem; color: #64748b;">通过证书透明日志、搜索引擎或扫描工具，大规模发现和收集目标域名、子域名及其相关主机的SSL证书信息，用于资产发现和安全分析</div>
+            </div>
+
+            <div class="card" onclick="window.open('challenges/29_robots/index.php', '_blank')">
+                <div class="status high">High</div>
+                <h3>Level 29</h3>
+                <p>robots.txt 泄露</p>
+                <div style="font-size: 0.8rem; color: #64748b;">robots.txt 是一种文本文件，用于指示搜索引擎爬虫如何访问和索引网站的内容</div>
+            </div>
+
+            
+         </div>
 
         <footer>
-            <p>OPEN SOURCE INTELLIGENCE GATHERING LABS v2.0</p>
-            <p>DESIGNED FOR EDUCATIONAL PURPOSES ONLY</p>
+            <p>OPEN SOURCE INTELLIGENCE GATHERING LABS v1.0</p>
+            <p>由雾島风起時开发</p>
         </footer>
     </div>
 
