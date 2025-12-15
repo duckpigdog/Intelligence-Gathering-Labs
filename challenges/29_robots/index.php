@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Level 29 - robots.txt 泄露</title>
+    <title>Level 29 - 君子协议</title>
     <link rel="stylesheet" href="../../css/challenge.css">
     <style>
         body { font-size: 18px; }
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <div class="container">
-        <h1>LEVEL 29: robots.txt 泄露</h1>
+        <h1>LEVEL 29: 君子协议</h1>
         <p>目标：找到该网站隐藏的 flag</p>
         <p>flag{}</p>
 
